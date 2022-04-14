@@ -50,7 +50,7 @@ app.get("/api/items", async (req, res) => {
 });
 
 // connect to the database
-mongoose.connect("mongodb://localhost:27017/museum", {
+mongoose.connect("mongodb://localhost:27017/fakestagram", {
   useNewUrlParser: true,
 });
 // Create a new item in the museum: takes a title and a path to an image.
@@ -98,4 +98,4 @@ app.delete("/api/items/:id", async (req, res) => {
   }
 });
 
-app.listen(3000, () => console.log("Server listening on port 3000!"));
+app.listen(8000, () => console.log("Server listening on port 8000!"));
